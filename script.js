@@ -76,40 +76,32 @@ function openGift(){
 
 function startMusic(){
 
+    let music = document.getElementById("music");
 
     music.volume = 0;
 
+    music.play().then(()=>{
 
-    music.play();
+        let fade = setInterval(()=>{
 
+            if(music.volume < 0.8){
 
+                music.volume += 0.05;
 
-    let fade = setInterval(()=>{
+            }else{
 
+                clearInterval(fade);
 
-        if(music.volume < 0.8){
+            }
 
-
-            music.volume +=0.05;
-
-
-        }
-
-        else{
+        },300);
 
 
-            clearInterval(fade);
+    }).catch(error=>{
 
+        console.log("Music blocked:", error);
 
-        }
-
-
-    },300);
-
-
-
-    musicPlaying=true;
-
+    });
 
 }
 
