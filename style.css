@@ -1,0 +1,632 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:
+    radial-gradient(circle at top,#ff8acb,#2b0038,#000);
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+/* CANVAS EFFECTS */
+
+canvas{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+
+
+/* INTRO MOVIE */
+
+
+#intro{
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    180deg,
+    #000,
+    #18001f
+    );
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+
+
+.cinema{
+
+    animation:
+    cinemaIn 3s ease;
+
+}
+
+
+
+@keyframes cinemaIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.5);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+
+
+.gift-box{
+
+    font-size:120px;
+
+    cursor:pointer;
+
+    animation:
+
+    floating 2s infinite;
+
+
+    filter:
+    drop-shadow(0 0 30px pink);
+
+}
+
+
+
+@keyframes floating{
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+}
+
+
+
+
+
+#intro h2{
+
+    font-size:35px;
+
+    margin:25px;
+
+    color:#ffd700;
+
+    text-shadow:
+
+    0 0 20px gold;
+
+}
+
+
+
+#intro h1{
+
+    font-size:70px;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 30px #ff4da6;
+
+}
+
+
+
+
+button{
+
+    margin-top:30px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #ff1493,
+    #ff69b4
+    );
+
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    box-shadow:
+
+    0 0 30px #ff1493;
+
+}
+
+
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+.title h1{
+
+    font-size:90px;
+
+    letter-spacing:8px;
+
+    animation:
+
+    zoomIn 3s;
+
+}
+
+
+
+
+.title span{
+
+    color:#ffb6e6;
+
+}
+
+
+
+
+.title strong{
+
+    color:#ffd700;
+
+    text-shadow:
+
+    0 0 40px gold;
+
+}
+
+
+
+
+
+.title p{
+
+    font-size:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+@keyframes zoomIn{
+
+from{
+
+transform:scale(0);
+
+opacity:0;
+
+}
+
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+
+
+
+/* GALLERY */
+
+
+.gallery,
+.message,
+.cake,
+.final{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.gallery h2,
+.message h2,
+.cake h2{
+
+    font-size:45px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+.slider{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+
+
+
+.slider img{
+
+
+    width:260px;
+
+    height:330px;
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    border:
+
+    2px solid rgba(255,255,255,.3);
+
+
+    box-shadow:
+
+    0 0 40px #ff69b4;
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.slider img:hover{
+
+    transform:
+
+    scale(1.1)
+    rotate(3deg);
+
+}
+
+
+
+
+
+
+
+/* MESSAGE */
+
+
+.glass{
+
+
+    max-width:850px;
+
+    margin:auto;
+
+
+    padding:40px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 0 50px rgba(255,105,180,.5);
+
+
+}
+
+
+
+#typing{
+
+    font-size:24px;
+
+    line-height:2;
+
+}
+
+
+
+
+
+/* CAKE */
+
+
+.cake-area{
+
+    font-size:140px;
+
+    cursor:pointer;
+
+    position:relative;
+
+    display:inline-block;
+
+
+    animation:
+
+    floating 2s infinite;
+
+}
+
+
+
+#flame{
+
+    font-size:50px;
+
+    position:absolute;
+
+    top:-40px;
+
+    left:50%;
+
+}
+
+
+
+#wish{
+
+    font-size:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+/* FINAL */
+
+
+.final{
+
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+.final h1{
+
+    font-size:80px;
+
+    text-shadow:
+
+    0 0 40px pink;
+
+}
+
+
+
+.final span{
+
+    color:#ffd700;
+
+}
+
+
+
+.final p{
+
+    margin-top:40px;
+
+    font-size:25px;
+
+}
+
+
+
+
+
+
+/* MUSIC BUTTON */
+
+
+#musicBtn{
+
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+
+width:60px;
+
+height:60px;
+
+
+border-radius:50%;
+
+
+z-index:10;
+
+
+font-size:25px;
+
+
+padding:0;
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.title h1{
+
+font-size:45px;
+
+}
+
+
+#intro h1{
+
+font-size:40px;
+
+}
+
+
+
+.final h1{
+
+font-size:45px;
+
+}
+
+
+
+.gallery h2,
+.message h2,
+.cake h2{
+
+font-size:32px;
+
+}
+
+
+}
