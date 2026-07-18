@@ -392,3 +392,12 @@ glow.remove();
 
 
 });
+
+function openSecretGift(){
+
+    document
+        .getElementById("stitchPopup")
+        .classList
+        .remove("hidden");
+
+}
