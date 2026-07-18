@@ -406,3 +406,27 @@ function openSecretGift(){
         .remove("hidden");
 
 }
+
+function openSecretGift(){
+
+
+let gift =
+document.querySelector(".secret-gift");
+
+
+gift.style.transform="scale(0)";
+
+
+setTimeout(()=>{
+
+
+document
+.getElementById("stitchBox")
+.classList
+.remove("hidden");
+
+
+},700);
+
+
+}
