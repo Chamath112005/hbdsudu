@@ -500,7 +500,81 @@ opacity:1;
 
 }
 
+#secretGift{
+    padding:100px 20px;
+    text-align:center;
+}
 
+.gift-surprise{
+
+    font-size:120px;
+    cursor:pointer;
+
+    animation:floating 2s infinite;
+
+    filter:drop-shadow(0 0 25px #ffd700);
+
+}
+
+#stitchPopup{
+
+    margin-top:40px;
+
+    animation:fadeUp .8s ease;
+
+}
+
+#stitchPopup img{
+
+    width:260px;
+    max-width:80%;
+
+    filter:drop-shadow(0 0 20px #00c8ff);
+
+}
+
+#stitchPopup h3{
+
+    margin-top:20px;
+    color:#8fe9ff;
+
+}
+
+#stitchPopup p{
+
+    margin-top:15px;
+
+    font-size:24px;
+
+    background:rgba(255,255,255,.12);
+
+    display:inline-block;
+
+    padding:15px 25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
 
 
 
