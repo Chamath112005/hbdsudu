@@ -276,6 +276,20 @@ document.getElementById("wish").innerHTML=
 
 celebration();
 
+setTimeout(() => {
+
+    document
+        .getElementById("secretGift")
+        .classList
+        .remove("hidden");
+
+    document
+        .getElementById("secretGift")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+},2500);    
 
 },1000);
 
