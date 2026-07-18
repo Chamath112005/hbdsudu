@@ -273,29 +273,34 @@ document.getElementById("wish").innerHTML=
 "✨ Your wish will come true, Nangi Baba ❤️ ✨";
 
 
-
-celebration();
-
-setTimeout(() => {
-
-    document
-        .getElementById("secretGift")
-        .classList
-        .remove("hidden");
-
-    document
-        .getElementById("secretGift")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
-
-},2500);    
-
 },1000);
 
 
 
 }
+
+celebration();
+
+
+setTimeout(()=>{
+
+
+document
+.getElementById("secretEnding")
+.classList
+.remove("hidden");
+
+
+document
+.getElementById("secretEnding")
+.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+
+},4000);
 
 
 
