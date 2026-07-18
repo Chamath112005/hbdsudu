@@ -704,3 +704,120 @@ font-size:32px;
 
 
 }
+
+/* SECRET ENDING */
+
+
+#secretEnding{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.secret-text h2{
+
+    font-size:55px;
+
+    color:#ffd700;
+
+    text-shadow:
+    0 0 30px gold;
+
+}
+
+
+.secret-text p{
+
+    font-size:25px;
+
+    margin-top:20px;
+
+}
+
+
+
+.secret-gift{
+
+    font-size:130px;
+
+    margin-top:50px;
+
+    cursor:pointer;
+
+    animation:
+    floating 2s infinite;
+
+    filter:
+    drop-shadow(0 0 30px #ffd700);
+
+}
+
+
+
+#stitchBox{
+
+    margin-top:40px;
+
+    animation:
+    fadeUp 1s ease;
+
+}
+
+
+
+#stitchBox img{
+
+    width:260px;
+
+    animation:
+
+    bounce 1s infinite;
+
+}
+
+
+
+.speech{
+
+    background:white;
+
+    color:#222;
+
+    padding:25px;
+
+    border-radius:30px;
+
+    max-width:350px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    box-shadow:
+
+    0 0 30px #00c8ff;
+
+}
+
+
+
+@keyframes bounce{
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
